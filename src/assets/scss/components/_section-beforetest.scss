@@ -1,0 +1,64 @@
+.ba-section-beforetest {
+  padding: 30px 0 80px;
+  @include breakpoint(medium) {
+    padding: 30px 0 70px;
+  }
+  @include breakpoint(1060px) {
+    padding: 15px 0 10px;
+  }
+}
+
+.ba-way {
+  display: flex;
+  color: #8c9eff;
+  a {
+    color: #8c9eff;
+    margin-right: 8px;
+  }
+  li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+  img {
+    margin-right: 8px;
+  }
+}
+.ba-button {
+  &--test {
+    position: relative;
+    bottom: -30px;
+    color: $white;
+    text-transform: uppercase;
+    left: 0;
+  }
+}
+.ba-text-card {
+  @include breakpoint(large) {
+    margin-left: -10px;
+  }
+  &__title {
+    font-size: 36px;
+    color: #333333;
+    letter-spacing: 0.15px;
+    @include breakpoint(medium) {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    @include breakpoint(1060px) {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text{
+	margin-bottom: 20px;
+	  @include breakpoint(medium){
+		 margin-bottom: 25px;
+	  }
+	  @include breakpoint(1060px){
+		margin-bottom: 40px;
+	 }
+  }
+}
+

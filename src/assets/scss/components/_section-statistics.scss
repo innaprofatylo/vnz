@@ -1,0 +1,93 @@
+.ba-section-statistics{
+	background-color: $white;
+	padding: 57px 0 0;
+	@include breakpoint(medium){
+		margin: auto;
+		padding: 155px 0 50px;
+	}
+}
+
+.ba-statistics{
+	
+	max-width: 1200px;
+
+}
+.ba-info {
+	position: relative;
+	&::before{
+		content: "";
+		height: 1px;
+	width: 35%;
+	position: absolute;
+	background-color: $primary-color;
+	top: -30px;
+	left: 33%;
+	}
+	&::after{
+	content: "";
+	height: 1px;
+	width: 25%;
+	position: absolute;
+	background-color: $primary-color;
+	bottom: 30px;
+	left: 37.5%;
+	}
+  @include breakpoint(medium) {
+	 display: flex;
+	 align-items: flex-start;
+	
+	 &::before{
+		content: "";
+		height: 1px;
+	width: 48.5%;
+	position: absolute;
+	background-color: $primary-color;
+	top: -80px;
+	left: 26%;
+	}
+	&::after{
+	content: "";
+	height: 1px;
+	width: 50%;
+	position: absolute;
+	background-color: $primary-color;
+	bottom: -10px;
+	left: 25%;
+	}
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 40px;
+
+		@include breakpoint(medium){
+		 & + &{
+			 margin-left: 25px;
+		 }
+	 }
+  }
+  &__img {
+    max-width: 80px;
+    max-height: 85px;
+	 margin-bottom: 10px;
+	 @include breakpoint(medium){
+		max-width: 177px;
+		 max-height: 174px;
+		 margin-bottom: 30px;
+	 }
+  }
+  &__text {
+    width: 260px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: $body-font-family;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    span {
+      color: $primary-color;
+    }
+  }
+}

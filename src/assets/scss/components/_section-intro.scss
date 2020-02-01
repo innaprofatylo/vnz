@@ -1,0 +1,28 @@
+.ba-intro {
+  background: #ccc url(../img/mainbg.jpg) 50%;
+  background-size: cover;
+  padding-top: 79px;
+  padding-bottom: 87px;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    margin-bottom: 38px;
+  }
+  &__subtitle {
+	 font-size: 42px;
+	 letter-spacing: 0.15px;
+	 margin-bottom: 31px;
+  }
+  &__text {
+	font-size: 24px;
+	letter-spacing: 0.15px;
+	margin-bottom: 67px;
+  }
+  &__button {
+    text-transform: uppercase;
+	 font-size: 16px;
+	
+  }
+}

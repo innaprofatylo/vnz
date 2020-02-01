@@ -1,0 +1,146 @@
+.ba-section--choise {
+  background-color: $white;
+  padding: 15px 0 70px;
+  position: relative;
+  @include breakpoint(medium) {
+    padding: 60px 0 60px;
+  }
+}
+p {
+  font-family: $body-font-family;
+  color: $black;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+h2 {
+  color: $black;
+  font-weight: normal;
+  @include breakpoint(medium) {
+    margin-bottom: 85px;
+    color: $primary-color;
+  }
+}
+.ba-slider-choise {
+	margin-bottom: 30px;
+}
+.ba-vnz {
+  margin-bottom: 60px;
+  padding: 0;
+  margin: 0px 15px 70px;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+
+    @include breakpoint(medium) {
+      // height: 90%;
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  &__title {
+    line-height: 1.23;
+    margin-bottom: 10px;
+    color: $primary-color;
+    font-weight: normal;
+    @include breakpoint(medium) {
+    }
+  }
+  &__adress {
+    line-height: 1.35;
+    flex-grow: 1;
+    margin-bottom: 30px;
+
+    @include breakpoint(medium) {
+    }
+  }
+  &__more {
+    font-size: 12px;
+    color: $primary-color;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+
+    @include breakpoint(medium) {
+    }
+  }
+  &__info {
+    padding: 15px 60px 40px 15px;
+    @include breakpoint(medium) {
+      padding: 12px 0px 10px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.ba-slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  
+
+  li {
+	  list-style: none;
+	
+	}
+	button {
+	 border: 1px solid $black;
+	 border-radius: 50%;
+	 background: #333;
+	 width: 15px;
+	 height: 15px;
+	 background-color: transparent;
+	  line-height: 0;
+	  font-size: 0;
+	  
+	  &:focus {
+		  outline: none;
+		 }
+		 .slick-active  {
+			 background: #333;
+		
+		 
+		 }
+	 }
+	li + li {
+    margin-left: 15px;
+  }
+}
+.ba-button {
+  background-color: $primary-color;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  // bottom: 30px;
+  left: calc(50% - 70px);
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(medium) {
+    bottom: 30px;
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid $primary-color;
+    a {
+      color: $primary-color;
+    }
+  }
+  &--spec{
+	left: calc(50% - 102px);
+  }
+}

@@ -1,0 +1,78 @@
+.ba-section-recommend{
+	background-color: $white;
+	@include breakpoint(medium){
+		padding: 15px 0 190px;
+	}
+}
+.ba-way{
+	display: flex;
+	color: #8C9EFF;
+	margin-bottom: 25px;
+a{
+	color: #8C9EFF;
+	margin-right: 8px;
+}
+li{
+	list-style: none;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	}
+	img{
+		margin-right: 8px;
+	}
+}
+.ba-title{
+	font-weight: 500;
+	color: #000000;
+	letter-spacing: 0.3px;
+	margin-bottom: 35px;
+	font-size: 26px;
+	@include breakpoint(medium){
+		font-size: 18px;
+	}
+}
+.ba-data{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background: #FAFAFA;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+	 0px 2px 4px rgba(0, 0, 0, 0.14);
+	 margin-bottom: 50px;
+		 height: 120px;
+		 margin-left: 10px;
+			margin-right: 10px;
+		 
+		 @include breakpoint(large){
+			margin-left: 30px;
+			margin-right: 30px;
+			 
+		 }
+
+	
+	&__link{
+		display: block;
+		overflow: hidden;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	&__img{
+		
+	}
+	&__vnz{
+		padding: 10px 25px 25px;	
+		@include breakpoint(medium){
+			padding: 0 0 15px 15px;			
+		}
+	}
+	&__city{
+		font-size: 24px;
+		margin-bottom: 2px;
+	}
+	&__name{
+		color: $primary-color;
+	}
+}

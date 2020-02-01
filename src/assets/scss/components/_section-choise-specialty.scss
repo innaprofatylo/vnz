@@ -1,0 +1,113 @@
+.ba-section--choise-spec {
+  background-color: $white;
+  padding: 25px 0 100px;
+  position: relative;
+  @include breakpoint(medium) {
+    padding: 70px 0 75px;
+  }
+}
+p {
+  font-family: $body-font-family;
+  color: $black;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+h2 {
+  color: $black;
+  font-weight: normal;
+  @include breakpoint(medium) {
+    margin-bottom: 85px;
+    color: $primary-color;
+  }
+}
+.ba-spec {
+  margin-bottom: 60px;
+  padding: 0;
+  margin: 0px 15px 70px;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+
+    @include breakpoint(medium) {
+      // height: 90%;
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: $primary-color;
+    font-weight: normal;
+    @include breakpoint(medium) {
+    }
+  }
+  &__more {
+    font-size: 12px;
+    color: $primary-color;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+
+    @include breakpoint(medium) {
+		 margin-bottom: 0px;
+    }
+  }
+  &__info {
+    padding: 15px 60px 40px 15px;
+    @include breakpoint(medium) {
+      padding: 12px 0px 10px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.ba-button--spec {
+  background-color: $primary-color;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  // bottom: 30px;
+  left: calc(50% - 110px);
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+}
+&:hover {
+	background-color: $white;
+	border: 2px solid $primary-color;
+	a{
+		color: $primary-color;
+ }
+  }
+
+  @include breakpoint(medium) {
+    bottom: 30px;
+   
+  }
+}
+.ba-slick-arrows{
+	display: flex;
+	cursor: pointer;
+	position: absolute;
+	bottom: 130px;
+	left: calc(50% - 17px);
+	div + div{
+		margin-left: 18px;
+	}
+	@include breakpoint(medium){
+		display: none;
+	}
+}
