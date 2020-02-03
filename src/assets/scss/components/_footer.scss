@@ -7,24 +7,21 @@
 			display: flex;
 			align-items: center;
 		}
-.ba-copyright{
-    
-}
+
 .ba-menu-footer{
 
-	
 	a{
 	color: #fff;
 	font-size: 12px;
-	
+	padding: 0;
 	}
 	li + li{
-		margin-left: 80px;
+		margin-left: 55px;
 	}
-	@include breakpoint(medium){
+	@include breakpoint(large){
 	
 	li + li{
-		margin-left: 54px;
+		margin-left: 94px;
 	}
 	}
 	

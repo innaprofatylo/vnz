@@ -1,12 +1,22 @@
 .off-canvas {
   .menu {
+	padding-top: 30px;
+	padding-left: 20px;
+	background: $primary-color;
+	height: 100vh;
 	  
     a {
-      padding: 10px;
+		padding: 20px;
+		color: $white;
+		text-transform: uppercase;
+		&:hover{
+			text-transform:none;
+			text-decoration: line-through;
+			transition: 0.3s;
+		}
     }
   }
 }
-
 .ba-header-wrap {
   background: #4054b2;
 }
@@ -17,9 +27,33 @@
 	}
   a {
 	color: $white;
-    font-size: 18px;
-    &:hover {
-      color: lighten($primary-color, 20%);
-    }
+	 font-size: 18px;
+	//  padding: 0;
+	//  transition: transform 0.3s, opacity 0.3s;
+   //  &:hover {
+	// 	// color: lighten($primary-color, 20%);
+	// 	// transition: transform 0.7s, opacity 0.3s;
+	// 	// text-decoration: line-through;
+		text-decoration: none;
+		position: relative;
+		transition: all 0.6s;
+		&:before {
+			 content: "";
+			 width: 0;
+			 height: 2px;
+			 position: absolute;
+			 bottom: 15px;
+			 left: 0;
+			 background: $white;
+			 transition: all 0.3s;
+		}
+		&:hover, &:focus {
+			 &:before {
+				  width:100%;
+				  left: 0;
+				  background: $white;
+			 }
+		}
   }
-}
+    }
+  

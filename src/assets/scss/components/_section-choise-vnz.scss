@@ -21,13 +21,11 @@ h2 {
     color: $primary-color;
   }
 }
-.ba-slider-choise {
-  margin-bottom: 30px;
-}
+
 .ba-vnz {
   margin-bottom: 60px;
   padding: 0;
-  margin: 0px 15px 70px;
+  margin: 0px 15px 55px;
   background-color: #fafafa;
   border: 1px solid #f2f2f2;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
@@ -42,7 +40,6 @@ h2 {
     padding-top: 15px;
 
     @include breakpoint(medium) {
-      // height: 90%;
       width: 100%;
       padding-top: 0;
     }
@@ -81,45 +78,7 @@ h2 {
     }
   }
 }
-.ba-slick-dots {
-  display: flex;
-  justify-content: center;
-  margin-left: 0;
 
-  li {
-	 list-style: none;
-	 border-radius: 50%;
-    border: 2px solid $black;
-    width: 15px;
-    height: 15px;
-    line-height: 0;
-    font-size: 0;
-	 
-  }
-  button {
-    
-
-    &:focus {
-      outline: none;
-    }
-  }
-  
-  li + li {
-    margin-left: 15px;
-  }
-  .slick-active {
-    background: #333;
-    border: 2px solid $white;
-	 box-shadow: 0 0 0 2px #333;
-	 border-radius: 50%;
-    width: 5px;
-	 height: 5px;
-	 border-radius: 50%;
-    
-  
-	
-  }
-}
 .ba-button {
   background-color: $primary-color;
   padding: 8px 18px;
@@ -127,26 +86,62 @@ h2 {
   font-size: 14px;
   letter-spacing: 0.5px;
   position: absolute;
-  // bottom: 30px;
-  left: calc(50% - 70px);
-
-  a {
-    color: $white;
-    text-transform: uppercase;
-  }
-
-  @include breakpoint(medium) {
-    bottom: 30px;
-  }
+  left: calc(50% - 80px);
+  color: $white;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $white;
     border: 2px solid $primary-color;
-    a {
-      color: $primary-color;
-    }
+    color: $primary-color;
   }
+
   &--spec {
-    left: calc(50% - 102px);
+   
+    left: calc(50% - 110px);
+  }
+}
+.ba-slick-arrows-one {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  bottom: 90px;
+  left: calc(50% - 22px);
+ 
+}
+
+.ba-slider-choise {
+  .slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+
+    .slick-active {
+      button {
+        background: $medium-gray;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 2px $medium-gray;
+      }
+    }
+
+    button {
+      width: 16px;
+      height: 16px;
+      display: block;
+      padding: 0;
+      border: 2px solid $medium-gray;
+      background: $white;
+      font-size: 0;
+      border-radius: 50%;
+      margin: 8px;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

@@ -21,11 +21,8 @@ h2 {
     color: $primary-color;
   }
 }
-.ba-slider-spec{
-	position: relative;
-}
+
 .ba-spec {
-  margin-bottom: 60px;
   padding: 0;
   margin: 0px 15px 70px;
   background-color: #fafafa;
@@ -74,22 +71,22 @@ h2 {
     }
   }
 }
-.ba-slick-arrows {
+
+.ba-slider-spec {
+  position: relative;
+}
+.ba-slick-arrows-two {
   display: flex;
   cursor: pointer;
   position: absolute;
-  bottom: 210px;
-  left: calc(50% - 17px);
-
-  @include breakpoint(medium) {
-	 display: none;
-	 bottom: 130px;
-	 margin-bottom: 100px;
+  bottom: 230px;
+  left: calc(50% - 22px);
   }
+
+.ba-spec-next {
+  padding-left: 18px;
 }
-.ba-spec-next{
-	padding-left: 18px;
-}
+
 .ba-button--spec {
   background-color: $primary-color;
   padding: 8px 18px;
@@ -98,10 +95,50 @@ h2 {
   letter-spacing: 0.5px;
   color: $white;
   text-transform: uppercase;
-  margin-bottom: 100px;
-
+ 
+	
   &:hover {
     background-color: $white;
     border: 2px solid $primary-color;
   }
+}
+
+
+.ba-slider-spec{
+
+	.slick-dots {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 57px;
+		
+	
+		.slick-active {
+		  button {
+			 background: $medium-gray;
+			 border: 3px solid #fff;
+			 box-shadow: 0 0 0 2px $medium-gray;
+			 
+		  }
+		}
+	
+		button {
+		  width: 16px;
+		  height: 16px;
+		  display: block;
+		  padding: 0;
+		  border: 2px solid $medium-gray;
+		  background: $white;
+		  font-size: 0;
+		  border-radius: 50%;
+		  margin: 8px;
+	
+		  &:focus {
+			 outline: none;
+		  }
+		}
+	 }
 }

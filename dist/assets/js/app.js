@@ -15557,7 +15557,7 @@ sliderChoise.slick({
   rows: 2,
   slidesPerRow: 2,
   dots: true,
-  dotsClass: 'ba-slick-dots',
+  // dotsClass: 'ba-slick-dots',
   arrows: false,
   responsive: [{
     breakpoint: 1080,
@@ -15582,7 +15582,7 @@ sliderSpec.slick({
   rows: 2,
   slidesPerRow: 2,
   dots: true,
-  dotsClass: 'ba-slick-dots',
+  // dotsClass: 'ba-slick-dots',
   arrows: false,
   responsive: [{
     breakpoint: 1080,
