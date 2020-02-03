@@ -1,5 +1,6 @@
 .off-canvas {
   .menu {
+	  
     a {
       padding: 10px;
     }
@@ -11,6 +12,9 @@
 }
 
 .ba-main-menu {
+	li{
+		padding-left: 50px;
+	}
   a {
 	color: $white;
     font-size: 18px;

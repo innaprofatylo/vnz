@@ -1,4 +1,4 @@
-.ba-section--choise {
+.ba-section-choise {
   background-color: $white;
   padding: 15px 0 70px;
   position: relative;
@@ -22,7 +22,7 @@ h2 {
   }
 }
 .ba-slider-choise {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .ba-vnz {
   margin-bottom: 60px;
@@ -85,33 +85,39 @@ h2 {
   display: flex;
   justify-content: center;
   margin-left: 0;
-  
 
   li {
-	  list-style: none;
-	
-	}
-	button {
-	 border: 1px solid $black;
+	 list-style: none;
 	 border-radius: 50%;
-	 background: #333;
-	 width: 15px;
-	 height: 15px;
-	 background-color: transparent;
-	  line-height: 0;
-	  font-size: 0;
-	  
-	  &:focus {
-		  outline: none;
-		 }
-		 .slick-active  {
-			 background: #333;
-		
-		 
-		 }
-	 }
-	li + li {
+    border: 2px solid $black;
+    width: 15px;
+    height: 15px;
+    line-height: 0;
+    font-size: 0;
+	 
+  }
+  button {
+    
+
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  li + li {
     margin-left: 15px;
+  }
+  .slick-active {
+    background: #333;
+    border: 2px solid $white;
+	 box-shadow: 0 0 0 2px #333;
+	 border-radius: 50%;
+    width: 5px;
+	 height: 5px;
+	 border-radius: 50%;
+    
+  
+	
   }
 }
 .ba-button {
@@ -140,7 +146,7 @@ h2 {
       color: $primary-color;
     }
   }
-  &--spec{
-	left: calc(50% - 102px);
+  &--spec {
+    left: calc(50% - 102px);
   }
 }

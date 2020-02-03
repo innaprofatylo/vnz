@@ -13,6 +13,8 @@ window.jQuery = $;
 // the line below
 import './lib/foundation-explicit-pieces';
 
+import './test';
+
 import slick from "slick-carousel";
 
 $(document).foundation();
