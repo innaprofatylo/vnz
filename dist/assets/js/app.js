@@ -14765,9 +14765,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "app" } }, [
-    _vm._v("\n\t" + _vm._s(_vm.msg) + "\n")
-  ])
+  return _c("div", { attrs: { id: "app" } })
 }
 var staticRenderFns = []
 render._withStripped = true

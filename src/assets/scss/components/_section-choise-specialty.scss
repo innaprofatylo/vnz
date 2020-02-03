@@ -1,9 +1,9 @@
 .ba-section--choise-spec {
   background-color: $white;
   padding: 25px 0 100px;
-  position: relative;
+
   @include breakpoint(medium) {
-    padding: 70px 0 75px;
+    padding: 70px 0 110px;
   }
 }
 p {
@@ -20,6 +20,9 @@ h2 {
     margin-bottom: 85px;
     color: $primary-color;
   }
+}
+.ba-slider-spec{
+	position: relative;
 }
 .ba-spec {
   margin-bottom: 60px;
@@ -59,7 +62,7 @@ h2 {
     margin-bottom: 20px;
 
     @include breakpoint(medium) {
-		 margin-bottom: 0px;
+      margin-bottom: 0px;
     }
   }
   &__info {
@@ -71,43 +74,34 @@ h2 {
     }
   }
 }
+.ba-slick-arrows {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  bottom: 210px;
+  left: calc(50% - 17px);
+
+  @include breakpoint(medium) {
+	 display: none;
+	 bottom: 130px;
+	 margin-bottom: 100px;
+  }
+}
+.ba-spec-next{
+	padding-left: 18px;
+}
 .ba-button--spec {
   background-color: $primary-color;
   padding: 8px 18px;
   border-radius: 25px;
   font-size: 14px;
   letter-spacing: 0.5px;
-  position: absolute;
-  // bottom: 30px;
-  left: calc(50% - 110px);
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 100px;
 
-  a {
-    color: $white;
-    text-transform: uppercase;
-}
-&:hover {
-	background-color: $white;
-	border: 2px solid $primary-color;
-	a{
-		color: $primary-color;
- }
+  &:hover {
+    background-color: $white;
+    border: 2px solid $primary-color;
   }
-
-  @include breakpoint(medium) {
-    bottom: 30px;
-   
-  }
-}
-.ba-slick-arrows{
-	display: flex;
-	cursor: pointer;
-	position: absolute;
-	bottom: 130px;
-	left: calc(50% - 17px);
-	div + div{
-		margin-left: 18px;
-	}
-	@include breakpoint(medium){
-		display: none;
-	}
 }
