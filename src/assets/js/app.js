@@ -26,29 +26,31 @@ sliderChoise.slick({
 	rows: 2,
 	slidesPerRow: 2,
 	dots: true,
-	// dotsClass: 'ba-slick-dots',
+	autoplay: true,
+	autoplaySpeed: 1500,
+
 	arrows: false,
 	responsive: [
 		{
 			breakpoint: 1080,
 			settings: {
 				rows: 1,
-				slidesPerRow: 2		  
+				slidesPerRow: 2
 			}
 		},
 		{
 			breakpoint: 640,
 			settings: {
-			 rows: 1,
-			 slidesPerRow: 1,
-			 dots: false,
-			 arrows: true,
-			 prevArrow: '[data-prev]',
-			 nextArrow: '[data-next]',
-		  }
+				rows: 1,
+				slidesPerRow: 1,
+				dots: false,
+				arrows: true,
+				prevArrow: '[data-prev]',
+				nextArrow: '[data-next]',
+			}
 		}
-		
-	 ]
+
+	]
 })
 
 let sliderSpec = $('.ba-slider-spec');
@@ -57,27 +59,28 @@ sliderSpec.slick({
 	rows: 2,
 	slidesPerRow: 2,
 	dots: true,
-	// dotsClass: 'ba-slick-dots',
+	autoplay: true,
+	autoplaySpeed: 1500,
 	arrows: false,
 	responsive: [
 		{
 			breakpoint: 1080,
 			settings: {
 				rows: 1,
-				slidesPerRow: 2		  
+				slidesPerRow: 2
 			}
 		},
 		{
 			breakpoint: 640,
 			settings: {
-			 rows: 1,
-			 slidesPerRow: 1,
-			 dots: false,
-			 arrows: true,
-			 prevArrow: '[data-spec-prev]',
-			 nextArrow: '[data-spec-next]',
-		  }
+				rows: 1,
+				slidesPerRow: 1,
+				dots: false,
+				arrows: true,
+				prevArrow: '[data-spec-prev]',
+				nextArrow: '[data-spec-next]',
+			}
 		}
-		
-	 ]
+
+	]
 })

@@ -15557,7 +15557,8 @@ sliderChoise.slick({
   rows: 2,
   slidesPerRow: 2,
   dots: true,
-  // dotsClass: 'ba-slick-dots',
+  autoplay: true,
+  autoplaySpeed: 1500,
   arrows: false,
   responsive: [{
     breakpoint: 1080,
@@ -15582,7 +15583,8 @@ sliderSpec.slick({
   rows: 2,
   slidesPerRow: 2,
   dots: true,
-  // dotsClass: 'ba-slick-dots',
+  autoplay: true,
+  autoplaySpeed: 1500,
   arrows: false,
   responsive: [{
     breakpoint: 1080,
