@@ -85,8 +85,6 @@ h2 {
   border-radius: 25px;
   font-size: 14px;
   letter-spacing: 0.5px;
-  position: absolute;
-  left: calc(50% - 80px);
   color: $white;
   text-transform: uppercase;
 
@@ -96,9 +94,25 @@ h2 {
     color: $primary-color;
   }
 
+  &--vnz{
+	position: absolute;
+	left: calc(50% - 80px);
+	
+  }
   &--spec {
-   
+	position: absolute;
     left: calc(50% - 110px);
+  }
+  &--result-test{
+	position: absolute;
+    left: calc(50% - 110px);
+  }
+  &--test{
+	position: absolute;
+	 left: calc(50% - 110px);
+	 @include breakpoint(large){
+		left: 50%;
+	 }  
   }
 }
 .ba-slick-arrows-one {
