@@ -6,6 +6,10 @@
   @include breakpoint(1060px) {
     padding: 15px 0 10px;
   }
+
+  img{
+	  margin: 0 auto;
+  }
 }
 .breadcrumbs{
 	li{
@@ -14,26 +18,19 @@
 	
 	
 }
-.ba-button {
-  &--test {
-    position: relative;
-    bottom: -30px;
-    color: $white;
-    text-transform: uppercase;
-    left: 0;
-  }
-}
+
 .ba-text-card {
   @include breakpoint(large) {
     margin-left: -10px;
   }
   &__title {
-    font-size: 36px;
+    font-size: 24px;
     color: #333333;
     letter-spacing: 0.15px;
     @include breakpoint(medium) {
       margin-top: 0;
-      margin-bottom: 20px;
+		margin-bottom: 20px;
+		font-size: 36px;
     }
     @include breakpoint(1060px) {
       margin-top: 60px;
