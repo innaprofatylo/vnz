@@ -1,0 +1,67 @@
+.ba-section-test{
+	padding: 15px 10px 40px;
+	@include breakpoint(medium){
+		padding: 15px 10px;		
+	}
+}
+.ba-allcard{
+	@include breakpoint(medium){
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.ba-test-card{
+	margin: 20px;
+	@include breakpoint(medium){		
+		margin: 0 0 50px;
+	}
+@include breakpoint(large){
+	margin: 0px 0 50px 100px;
+}
+}
+.ba-test-start{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+
+	&__img{
+		margin-right: 27px;
+		display: inline-block;
+		
+	}
+	&__title{
+		text-align: center;
+		margin: 0;
+
+	}
+}
+.ba-form{
+	font-size: 14px;
+	letter-spacing: 0.33px;
+	color: #333333;
+	legend{
+		margin-bottom: 0;
+	}
+	input{
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	label{
+		margin-bottom: 0px;
+	}
+	fieldset{
+		margin-bottom: 0px;
+	}
+}
+.ba-button{
+	&--test{
+		position: relative;
+		left: calc(50% - 37px);
+		@include breakpoint(large){
+			left: 20%;
+			
+		}
+	}
+}

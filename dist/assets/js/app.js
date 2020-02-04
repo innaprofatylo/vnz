@@ -15738,7 +15738,7 @@ new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/danil/Documents/beetroot_academy/vvvvvnnnnnnzzzzzz/src/assets/js/app.js */"./src/assets/js/app.js");
+module.exports = __webpack_require__(/*! d:\Beetroot\vnz\src\assets\js\app.js */"./src/assets/js/app.js");
 
 
 /***/ })
