@@ -7,63 +7,91 @@
 				</li>
 				<li>Результати тесту</li>
 			</ul>
-		
+
 		</div>
 		<!-- /.column -->
 
 		<div class="row align-center">
-	<div class="ba-allcard">
+			<div class="ba-allcard">
 
-		
-		<div class="column medium-6 large-6 show-for-medium">
-			<img src="assets/img/fototest.png" alt="fototest">
-		</div>
-		<!-- /.column -->
-		
-		<div class="column small-12 medium-6 large-6">
-			<div class="ba-test-card">
-				
-				<div class="ba-test-start">
-					<img class="ba-test-start__img" src="assets/img/draw.svg" alt="draw">
-					<h3 class="ba-test-start__title">
-						Тест Визначення <br>професійних уподобань</h3>
+
+				<div class="column medium-6 large-6 show-for-medium">
+					<img src="assets/img/fototest.png" alt="fototest">
 				</div>
-				<!-- /.ba-test-card__start -->
-				<app-progress></app-progress>
-				
-				
-				<form action="#" method="POST" class="ba-form">
-					
-					<fieldset>
-						<legend>1.  Уявіть, що ви на виставці.Що вас найбільше приваблює в експонатах?</legend>
-						<input type="radio" name="t0" value="Red" id="vp0" required><label for="vp0"> колір, досконалість форм</label><br>
-						<input type="radio" name="t1" value="Blue" id="vp1"><label for="vp1"> як і з чого вони зроблені</label>
-					</fieldset>
-					
-					<fieldset>
-						<legend>2.  Якій нагороді ви б зраділи найбільше?</legend>
-						<input type="radio" name="t2" value="Red" id="vp2" required><label for="vp2"> за громадську діяльність</label><br>
-						<input type="radio" name="t3" value="Blue" id="vp3"><label for="vp3"> за науковий винахід</label>
-					</fieldset>
-					
-					<fieldset>
-						<legend>	3.  Яким журналам надаєте первагу?</legend>
-						<input type="radio" name="t4" value="Red" id="vp4" required><label for="vp4"> літературно-художні</label><br>
-						<input type="radio" name="t5" value="Blue" id="vp5"><label for="vp5"> наукові</label>
-					</fieldset>
-					
-				</form>
-				
-				<a class="ba-button ba-button--test" href="recommend.html">далі</a>
-				
+				<!-- /.column -->
+
+				<div class="column small-12 medium-6 large-6">
+					<div class="ba-test-card">
+
+						<div class="ba-test-start">
+							<img class="ba-test-start__img" src="assets/img/draw.svg" alt="draw">
+							<h3 class="ba-test-start__title">
+								Тест Визначення <br>професійних уподобань</h3>
+						</div>
+						<!-- /.ba-test-card__start -->
+						<app-progress></app-progress>
+
+						<div class="result">
+							Ваш результат: <span class="result_text">пока ноль</span>
+						</div>
+
+						<form action="#" method=" post" id="testform" class="ba-form">
+
+							<fieldset>
+								<legend>1.Уявіть, що ви на виставці.Що вас найбільше приваблює в експонатах?</legend>
+								<label for="vp0">
+									<input type="radio" name="t0" id="vp0" data-id="0" class="answer"
+										value="колір, досконалість форм">
+									<span>
+										колір, досконалість форм
+									</span>
+								</label>
+								<label for="vp1">
+									<input type="radio" name="t0" id="vp1" class="answer" value="як і з чого вони зроблені">
+									<span>
+										як і з чого вони зроблені
+									</span>
+								</label>
+
+
+							</fieldset>
+
+							<fieldset>
+								<legend>2.Якій нагороді ви б зраділи найбільше?</legend>
+								<label for="vp2">
+									<input type="radio" name="t1" id="vp2" data-id="2" class="answer">
+									за громадську діяльність
+								</label>
+								<label for="vp3">
+									<input type="radio" name="t1" id="vp3" data-id="3" class="answer">
+									за науковий винахід
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend> 3.Яким журналам надаєте первагу?</legend>
+								<label for="vp4">
+									<input type="radio" name="t2" id="vp4" data-id="4" class="answer">
+									літературно-художні
+								</label>
+								<label for="vp5">
+									<input type="radio" name="t2" id="vp5" data-id="5" class="answer">
+									наукові
+								</label>
+							</fieldset>
+
+						</form>
+
+						<button id="btn" class="ba-button ba-button--test" href="recommend.html">проверить тест</button>
+
+					</div>
+					<!-- /.ba-text-card -->
+				</div>
+				<!-- /.column -->
 			</div>
-			<!-- /.ba-text-card -->
+			<!-- /.ba-allcard -->
 		</div>
-		<!-- /.column -->
-	</div>
-	<!-- /.ba-allcard -->
-</div>
-<!-- /.row -->
+		<!-- /.row -->
 	</div>
 	<!-- /.row -->
 </section>
