@@ -15499,28 +15499,42 @@ foundation_sites_js_foundation_core__WEBPACK_IMPORTED_MODULE_1__["Foundation"].p
 "use strict";
 
 
-var radioT0 = document.getElementsByName('t0');
+var inputName = document.getElementsByName('t0');
+var answerA = [];
+var answerB = []; // for (let i =0; i<inputName.length; i++){
+// 	inputName[i].onchange = testRadio;
+// }
 
-for (var i = 0; i < radioT0.length; i++) {
-  radioT0[i].onchange = testRadio;
-}
+var button = document.getElementById('btn');
+button.addEventListener('click', haveResul);
 
-function testRadio() {
-  console.log(this.value);
-}
-
-var buttonSubmit = document.getElementById('btn').onclick = checkRadio;
-
-function checkRadio() {
-  var m = radioT0;
-
-  for (var _i = 0; _i < m.length; _i++) {
-    if (m[_i].checked) {
-      alert(m[_i].value);
-      break;
+function haveResul() {
+  for (var i = 0; i < inputName.length; i++) {
+    if (inputName[i].checked) {
+      if (inputName[i].value) {
+        // answerA.push(inputName.value)
+        answerA.push(inputName[i].value);
+        console.log(answerA);
+      } else {
+        answerB.push(inputName[i].value); // console.log(answerB);
+      }
     }
   }
-}
+} // }
+// let buttonSubmit = document.getElementById('btn').onclick = checkRadio;
+// function checkRadio() {
+// 	let m = inputName;
+// 	for (let i =0; i<m.length; i++){
+// 	if(m[i].checked){
+// 		consol.log(m[i].value);
+// 		break;
+// 	}
+// }
+// }
+// console.log(x);
+// let arrow = [];
+// let giveAnswer = FormData.getAll;
+// console.log(giveAnswer);
 
 /***/ }),
 
