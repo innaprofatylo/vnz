@@ -1,0 +1,62 @@
+.ba-secttion-result {
+  padding-top: 15px;
+  padding-bottom: 100px;
+
+  &__title {
+    text-align: center;
+    color: $black;
+    margin-bottom: 31px;
+  }
+
+  &__down-title{
+	  text-align: center;
+	  margin-bottom: 45px;
+		font-size: 20px;
+		font-weight: 500;
+		color: $black;
+  }
+}
+
+.ba-box {
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  padding: 0;
+  max-height: 158px;
+	margin: 0 auto;
+
+  span {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+    color: $black;
+  }
+  p {
+    font-size: 14px;
+	 color: $primary-color;
+	 margin-bottom: 57px;
+  }
+
+  &--math {
+    margin-bottom: 35px;
+
+    @include breakpoint(medium) {
+      margin-bottom: 20px;
+    }
+  }
+  &--hug {
+    margin-bottom: 37px;
+
+    @include breakpoint(large) {
+      margin-left: 131px;
+    }
+  }
+}
+
+
+
+
+

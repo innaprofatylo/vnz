@@ -59,8 +59,7 @@ li{
 			width: 100%;
 		}
 	}
-	
-	&__vnz{
+		&__vnz{
 		padding: 10px 25px 25px;	
 		@include breakpoint(medium){
 			padding: 0 0 15px 15px;			
