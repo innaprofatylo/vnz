@@ -6,9 +6,5 @@ bower_components
 *.swp
 .cache
 .idea
-<<<<<<< HEAD
 yarn.lock
-dist
-=======
-yarn.lock
->>>>>>> 17daa6e43da96a419d28904fb701c0a651df1d02
+
