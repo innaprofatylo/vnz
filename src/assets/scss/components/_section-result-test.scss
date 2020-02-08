@@ -26,6 +26,8 @@
   max-height: 158px;
 	margin: 0 auto;
 
+
+	
   span {
     padding-top: 40px;
     display: flex;
@@ -42,13 +44,18 @@
 
   &--math {
     margin-bottom: 35px;
-
+	 img{
+		height: 100%;
+	}
     @include breakpoint(medium) {
       margin-bottom: 20px;
     }
   }
   &--hug {
-    margin-bottom: 37px;
+	 margin-bottom: 37px;
+	 img{
+		height: 100%;
+	}
 
     @include breakpoint(large) {
       margin-left: 131px;
