@@ -16,6 +16,7 @@
           value="a"
           class="answer"
           v-model="userAnswers[index]"
+			 required
         />
         {{item.answerA}}
       </label>
@@ -63,9 +64,9 @@ export default {
     }
   },
   mounted() {
-   //  window.localStorage.removeItem("answerA");
-	//  window.localStorage.removeItem("answerB");
-	 
+    //  window.localStorage.removeItem("answerA");
+    //  window.localStorage.removeItem("answerB");
+
     fetch("assets/json/mydoc.json")
       .then(res => res.json())
       .then(list => {
