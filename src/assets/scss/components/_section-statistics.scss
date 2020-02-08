@@ -26,11 +26,11 @@
 	&::after{
 	content: "";
 	height: 1px;
-	width: 25%;
+	width: 35%;
 	position: absolute;
 	background-color: $primary-color;
 	bottom: 30px;
-	left: 37.5%;
+	left: 33%;
 	}
   @include breakpoint(medium) {
 	 display: flex;

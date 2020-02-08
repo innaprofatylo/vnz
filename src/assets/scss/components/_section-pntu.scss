@@ -1,0 +1,177 @@
+.ba-section-pntu {
+  padding: 15px 0 60px;
+  background-color: #fff;
+}
+
+.ba-pntu-title {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.ba-university-logo {
+  margin-right: 20px;
+}
+
+.ba-university-name {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+ margin: 0px 0 20px;
+ letter-spacing: 0.15px;
+}
+
+.ba-ptnu-info {
+  color: rgba(0, 0, 0, 0.6);
+ letter-spacing: 0.25px;
+}
+.ba-column{
+	padding: 2px;
+}
+.ba-button{
+	&--pntu{
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+   // left: calc(50% - 110px);
+	color: $white;
+	text-transform: uppercase;
+	margin: 40px 0;
+ 
+  &:hover {
+    background-color: $white;
+	 color: $primary-color;
+  }
+}
+//   @include breakpoint(medium) {
+//     bottom: 30px;
+//   }
+}
+
+.ba-set {
+  margin-bottom: 35px;
+  margin-left: 25px;
+  display: flex;
+ 
+  &__vnz {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	padding: 0 45px 10px 15px;
+	
+	&:after {
+		content: "";
+		height: 2px;
+		width: 200px;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.12);
+		bottom: 0;
+		left: 10%;
+	 }
+  }
+  &__data {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 0;
+  }
+  &__link {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+  }
+}
+.ba-cards-title{
+	margin: 10px 0 30px;
+	font-weight: 500;
+	letter-spacing: 0.15px;
+}
+.ba-cards {
+	display: flex;
+	align-items: center;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+	 0px 2px 4px rgba(0, 0, 0, 0.14);
+	 margin-left: 20px;
+	 margin-right: 20px;
+	 height: 120px;
+	 margin-bottom: 10px;
+
+	 @include breakpoint(medium){
+		margin-bottom: 55px;
+	 }
+
+  &__info {
+	 display: block;
+	 color: rgba(0, 0, 0, 0.87);
+	 font-size: 24px;
+	 font-weight: normal;
+	 margin: 0;
+	 padding: 20px 0 20px 20px;
+	 @include breakpoint(medium){
+		font-size: 18px;
+		padding: 20px 0 20px 10px;
+	 }
+	 @include breakpoint(1050px){
+		font-size: 24px;
+	 }
+  }
+  &__img {
+   
+  }
+  &__link{
+	  display: block;
+	  overflow: hidden;
+	  img{
+		  display: block;
+		  width: 100%;
+	  }
+  }
+}
+
+.ba-documents {
+	margin-bottom: 50px;
+	&__title{
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.15px;
+		margin-bottom: 30px;
+	}
+	&__list{
+		font-size: 14px;
+		font-weight: normal;
+		letter-spacing: 0.25px;
+		line-height: 20px;
+
+		li{
+			margin-bottom: 20px;
+		}
+	}
+}
+.ba-button{
+&--sign-in {
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: $white;
+  text-transform: uppercase;
+  left: calc(50% - 90px);
+  position: relative;
+  bottom: -5px;
+  
+ 
+  
+   &:hover {
+    background-color: $white;
+    border: 2px solid $primary-color;
+	 color: $primary-color;
+   
+  }
+}
+}
